@@ -29,6 +29,7 @@
 		828AC06423D21E500098D215 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		828AC06B23D21E670098D215 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		828AC06D23D21E720098D215 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
+		828AC07023D35AD30098D215 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +46,7 @@
 		828AC05823D21E500098D215 = {
 			isa = PBXGroup;
 			children = (
+				828AC07023D35AD30098D215 /* .gitignore */,
 				828AC06323D21E500098D215 /* TreeEnum */,
 				828AC06223D21E500098D215 /* Products */,
 			);
