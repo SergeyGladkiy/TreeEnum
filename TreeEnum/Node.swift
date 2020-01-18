@@ -23,6 +23,7 @@ class Node {
 
 
 
+
 extension Node {
     func traversalInOrder() {
         left?.traversalInOrder()
@@ -40,5 +41,9 @@ extension Node {
         left?.traversalPostOrder()
         right?.traversalPostOrder()
         print(value)
+    }
+    
+    func forPracticeMerge() {
+        print(#function)
     }
 }
