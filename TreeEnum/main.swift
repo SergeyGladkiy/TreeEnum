@@ -20,6 +20,6 @@ for _ in iteration {
     tree.addValue(arrayRandom.randomElement()!)
 }
 
-//tree.root?.traversalInOrder()
+tree.root?.traversalInOrder()
 //tree.root?.traversalPreOrder()
-tree.root?.traversalPostOrder()
+//tree.root?.traversalPostOrder()
