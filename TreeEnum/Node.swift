@@ -20,6 +20,29 @@ class Node {
     
 }
 
+
+extension Node: CustomStringConvertible {
+    
+    var description: String {
+        return diagram(for: self)
+    }
+    
+    func diagram(for node: Node?,_ top: String = "",_ root: String = "",_ bottom: String = "") -> String {
+        
+        guard let node = node else {
+            return root + "nil\n"
+        }
+        
+        if node.left == nil && node.right == nil {
+            return root + "\(node.value)\n"
+        }
+        
+        return diagram(for: node.right, top + " ", top + "┌──", top + "│ ") + root + "\(node.value)\n" + diagram(for: node.left, bottom + "│ ", bottom + "└──", bottom + " ")
+        
+    }
+    
+}
+
 extension Node {
     func traversalInOrder() {
         left?.traversalInOrder()
