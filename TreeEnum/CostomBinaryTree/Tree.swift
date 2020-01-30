@@ -8,17 +8,17 @@
 
 import Foundation
 
-class TreeCommon {
+struct TreeCommon<Element: Comparable> {
     
-    var root: Node?
+    var root: Node<Element>?
     
-    func addValue(_ number: Int) {
+    mutating func addValue(_ number: Element) {
         self.root = self.addNode(self.root, with: number)
     }
 }
 
 extension TreeCommon {
-    private func addNode(_ node: Node?, with value: Int) -> Node {
+    private func addNode(_ node: Node<Element>?, with value: Element) -> Node<Element> {
         
         guard let node = node else {
             return Node(value: value)

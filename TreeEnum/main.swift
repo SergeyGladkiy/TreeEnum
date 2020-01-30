@@ -8,7 +8,8 @@
 
 import Foundation
 
-let tree = TreeCommon()
+//var tree = TreeCommon<Int>()
+let enumTree = EnumTree()
 
 var arrayRandom = [Int]()
 var iteration = 1...19
@@ -16,10 +17,17 @@ for i in iteration {
     arrayRandom.append(i)
 }
 
+//
+//for _ in iteration {
+//    tree.addValue(arrayRandom.randomElement()!)
+//}
+
 for _ in iteration {
-    tree.addValue(arrayRandom.randomElement()!)
+    enumTree.addValue(arrayRandom.randomElement()!)
 }
 
-tree.root?.traversalInOrder()
-//tree.root?.traversalPreOrder()
-//tree.root?.traversalPostOrder()
+
+
+
+
+

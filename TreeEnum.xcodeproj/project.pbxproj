@@ -10,6 +10,8 @@
 		828AC06523D21E500098D215 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828AC06423D21E500098D215 /* main.swift */; };
 		828AC06C23D21E670098D215 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828AC06B23D21E670098D215 /* Node.swift */; };
 		828AC06E23D21E720098D215 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828AC06D23D21E720098D215 /* Tree.swift */; };
+		828AC07323D490A90098D215 /* EnumNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828AC07223D490A90098D215 /* EnumNode.swift */; };
+		828AC07723D4947B0098D215 /* EnumTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828AC07623D4947B0098D215 /* EnumTree.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +32,8 @@
 		828AC06B23D21E670098D215 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		828AC06D23D21E720098D215 /* Tree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		828AC07023D35AD30098D215 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		828AC07223D490A90098D215 /* EnumNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumNode.swift; sourceTree = "<group>"; };
+		828AC07623D4947B0098D215 /* EnumTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumTree.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,10 +68,28 @@
 			isa = PBXGroup;
 			children = (
 				828AC06423D21E500098D215 /* main.swift */,
+				828AC07523D491D50098D215 /* EnumTree */,
+				828AC07423D491AE0098D215 /* CostomBinaryTree */,
+			);
+			path = TreeEnum;
+			sourceTree = "<group>";
+		};
+		828AC07423D491AE0098D215 /* CostomBinaryTree */ = {
+			isa = PBXGroup;
+			children = (
 				828AC06D23D21E720098D215 /* Tree.swift */,
 				828AC06B23D21E670098D215 /* Node.swift */,
 			);
-			path = TreeEnum;
+			path = CostomBinaryTree;
+			sourceTree = "<group>";
+		};
+		828AC07523D491D50098D215 /* EnumTree */ = {
+			isa = PBXGroup;
+			children = (
+				828AC07623D4947B0098D215 /* EnumTree.swift */,
+				828AC07223D490A90098D215 /* EnumNode.swift */,
+			);
+			path = EnumTree;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,8 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				828AC07723D4947B0098D215 /* EnumTree.swift in Sources */,
 				828AC06E23D21E720098D215 /* Tree.swift in Sources */,
 				828AC06523D21E500098D215 /* main.swift in Sources */,
+				828AC07323D490A90098D215 /* EnumNode.swift in Sources */,
 				828AC06C23D21E670098D215 /* Node.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
